@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Pães Caseiros</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(270deg, #00a2ff, #00566b, #00a2ff);
+            background-size: 400% 400%;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+            animation: gradientAnimation 8s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        nav a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #ffcc00;
+            transition: width 0.3s;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #00a2ff;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            animation: fadeInFooter 2s ease-in-out;
+        }
+
+        @keyframes fadeInFooter {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #00657e;
+            transition: color 0.3s ease;
+        }
+
+        ul li a:hover {
+            color: #ff5722;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pão Caseiro</h1>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#receitas">Receitas</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Bem-vindo ao Pão Caseiro, onde o sabor e a saúde se encontram! Descubra receitas irresistíveis e fáceis de pães caseiros, perfeitas para quem busca mais sabor e nutrição no dia a dia.</p>
+        </section>
+
+        <section id="receitas">
+            <h2>Receitas Populares</h2>
+            <ul>
+                <li><a href="pao de forma PARTE2.html">Pão de Forma</a></li>
+                <li><a href="receita2.html">Pão Francês</a></li>
+                <li><a href="receita3.html">Pão Integral</a></li>
+                <li><a href="pao caseiro PARTE2.html.html">Pão Caseiro</a></li>
+            </ul>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Para mais informações, envie um e-mail para <a href="mailto:lucas.aluno.estacio.br">Lucas aluno</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pão Caseiro. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
