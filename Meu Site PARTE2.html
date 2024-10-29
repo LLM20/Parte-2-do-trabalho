@@ -82,7 +82,7 @@
         footer {
             text-align: center;
             padding: 10px;
-            background-color: #00a2ff;
+            background: linear-gradient(270deg, #00a2ff, #00566b, #00a2ff);
             color: #ffffff;
             position: relative;
             bottom: 0;
@@ -118,12 +118,16 @@
 </head>
 <body>
     <header>
-        <h1>Pão Caseiro</h1>
-        <nav>
-            <a href="#sobre">Sobre</a>
-            <a href="#receitas">Receitas</a>
-            <a href="#contato">Contato</a>
-        </nav>
+        <header>
+            <h1>Pão Caseiro</h1>
+            <p>Deliciosas receitas de pães feitos em casa.</p>
+            <nav>
+                <a href="#sobre">Sobre</a>
+                <a href="#receitas">Receitas</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </header>
+        
     </header>
 
     <main>
@@ -133,21 +137,25 @@
         </section>
 
         <section id="receitas">
-            <h2>Receitas Populares</h2>
+            <h2>Receitas Irresistíveis de Pão</h2>
+            <p>Descubra como preparar pães deliciosos que vão deixar todos com água na boca!</p>
             <ul>
-                <li><a href="pao de forma PARTE2.html">Pão de Forma</a></li>
-                <li><a href="pao caseiro PARTE2.html.html">Pão Caseiro</a></li>
+                <li><a href="pao de forma PARTE2.html">🥖 Pão de Forma: Perfeito para sanduíches e torradas!</a></li>
+                <li><a href="pao caseiro PARTE2.html.html">🍞 Pão Caseiro: O sabor da tradição, feito com amor!</a></li>
             </ul>
         </section>
+        
 
         <section id="contato">
-            <h2>Contato</h2>
-            <p>Para mais informações, envie um e-mail para <a href="mailto:lucas.aluno.estacio.br">Lucas aluno</a>.</p>
-        </section>
+            <h2>Entre em Contato</h2>
+            <p>Se você tiver alguma dúvida ou precisar de mais informações, não hesite em entrar em contato. Envie um e-mail para <a href="mailto:lucas.aluno@estacio.br">Lucas Aluno</a> e teremos prazer em ajudar!</p>
+        </section>        
     </main>
 
     <footer>
-        <p>&copy; 2024 Pão Caseiro. Todos os direitos reservados.</p>
+        <p>&copy; <span id="currentYear"></span> Pão Caseiro.</p>
+        ...
     </footer>
+    
 </body>
 </html>
