@@ -84,6 +84,28 @@
         }
     </style>
 </head>
+
+    
+<input type="text" id="campo">
+<button onclick="busca()"> Buscar</button>
+
+
+<script>
+    const ingrediente = ['farinha', 'açúcar', 'ovos','manteiga','fermento','Água','Sal'];
+    function busca (){
+        var ingredienteProcurada =document.getElementById("campo").value;
+        console.log(ingredienteProcurada);
+        if (ingrediente.includes(ingredienteProcurada)){
+console.log(`${ingredienteProcurada} está no array de ingrediente.`);
+} else {
+console.log(`${ingredienteProcurada} não está no array de ingrediente.`);
+frutas.push(ingredienteProcurada);
+console.log(`Acabei de adicionar a ${ingredienteProcurada} sua lista de ingrediente`);
+console.log(ingrediente);
+}
+
+    }
+    </script>
 <body>
     <header>
         <h1>Receitas de Pão Caseiro</h1>
